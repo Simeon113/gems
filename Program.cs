@@ -21,7 +21,7 @@ namespace Unit04
         private static int FONT_SIZE = 15;
         private static int COLS = 60;
         private static int ROWS = 40;
-        private static string CAPTION = "Robot Finds Kitten";
+        private static string CAPTION = "Greed";
         private static string DATA_PATH = "Data/messages.txt";
         private static Color WHITE = new Color(255, 255, 255);
         private static int DEFAULT_GEMS = 20;
@@ -60,12 +60,10 @@ namespace Unit04
             // load the messages
             List<string> messages = File.ReadAllLines(DATA_PATH).ToList<string>();
 
-            // create the artifacts
+            // create the gems
             Random random = new Random();
             for (int i = 0; i < DEFAULT_GEMS; i++)
             {
-                // string text = ((char)random.Next(33, 126)).ToString();
-                // string message = messages[i];
 
                 int x = random.Next(1, COLS);
                 int y = random.Next(1, ROWS);
@@ -82,14 +80,6 @@ namespace Unit04
                 Point velocity = new Point(0, 1);
                 velocity = velocity.Scale(15);
 
-                // Artifact artifact = new Artifact();
-                // artifact.SetText(text);
-                // artifact.SetFontSize(FONT_SIZE);
-                // artifact.SetColor(color);
-                // artifact.SetPosition(position);
-                // artifact.SetMessage(message);
-                // cast.AddActor("artifacts", artifact);
-
                 Falling_object gem = new Falling_object();
                 gem.SetPoints(points);
                 gem.SetVelocity(velocity);
@@ -101,11 +91,9 @@ namespace Unit04
 
             }
 
-
+            // create the rocks
             for (int i = 0; i < DEFAULT_ROCKS; i++)
             {
-                // string text = ((char)random.Next(33, 126)).ToString();
-                // string message = messages[i];
 
                 int x = random.Next(1, COLS);
                 int y = random.Next(1, ROWS);
@@ -120,16 +108,6 @@ namespace Unit04
                 int points = random.Next(-100, -10);
                 Point velocity = new Point(0, 1);
                 velocity = velocity.Scale(15);
-
-                // Artifact artifact = new Artifact();
-                // artifact.SetText(text);
-                // artifact.SetFontSize(FONT_SIZE);
-                // artifact.SetColor(color);
-                // artifact.SetPosition(position);
-                // artifact.SetMessage(message);
-                // cast.AddActor("artifacts", artifact);
-
-
 
                 Falling_object rock = new Falling_object();
                 rock.SetPoints(points);

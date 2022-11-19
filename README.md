@@ -1,7 +1,5 @@
-# Robot Finds Kitten
-Simon Carless once described robotfindskitten as "less a game and more a way of 
-life ... It's fun to wander around until you find a kitten, at which point you feel 
-happy and can start again". I don't think I could have said it better myself!
+# Greed
+Colourful stones are falling from the sky. Collect the gems and avoid the rocks to gain points.
 
 ---
 ## Getting Started
@@ -33,5 +31,4 @@ root                    (project root folder)
 * raylib-cs 3.7.0.1
 
 ## Authors
-* Matt Manley (manleym@byui.edu)
-* Scott Burton (burtons@byui.edu)
+* Simeon Barfuss (simeon113@@byui.edu)

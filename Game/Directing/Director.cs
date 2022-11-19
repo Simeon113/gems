@@ -96,21 +96,6 @@ namespace Unit04.Game.Directing
                 
                 }
 
-                // if (actor.GetPosition() == 0)
-                // {
-                //     Falling_object falling_object = (Falling_object) actor;
-
-                //     int points = falling_object.getPoints();
-
-                //     this._points = points + _points;
-
-                //     string message = $"Points: {_points}";
-                //     banner.SetText(message);
-
-                //     cast.RemoveActor("falling_objects", actor);
-                
-                // }
-
                 actor.MoveNext(maxX, maxY);
             } 
         }
